@@ -1,0 +1,37 @@
+table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 500px;
+}
+th.mat-header-cell {
+    text-align: left;
+    max-width: 300px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.search-container{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btn-link{
+    color: rgb(71, 69, 69);
+    padding: .25em;
+    display: inline-block;
+}
+#test{
+    padding: .5em;
+    display: inline-block;
+}
+.testt{
+    display:inline-block;
+    font-size: 1.3em;
+    text-align: right;
+}

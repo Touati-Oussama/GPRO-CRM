@@ -1,0 +1,9 @@
+select{
+    width: 90%;
+    margin: 5px;
+}
+
+#test{
+    display: flex;
+  align-items: center;
+}

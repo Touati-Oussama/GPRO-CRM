@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    min-width: 500px;
+}
+th.mat-header-cell {
+    text-align: left;
+    max-width: 300px;
+}
+button{
+    background-color: grey;
+    color:aliceblue;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    height: 40px;
+}
+

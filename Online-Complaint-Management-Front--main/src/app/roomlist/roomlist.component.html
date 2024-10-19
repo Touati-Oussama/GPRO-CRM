@@ -1,0 +1,50 @@
+
+<!--<div class="row" style="margin: 20px;">
+  <button class="btn btn-dark" (click)="add()">
+    add conversation
+  </button>
+</div>
+<div class="example-container mat-elevation-z8">
+  <h3>{{nickname}} <button mat-flat-button (click)="logout()"><mat-icon>logout</mat-icon></button></h3>
+  <h2>Room List</h2>
+  <div class="example-loading-shade"
+       *ngIf="isLoadingResults">
+    <mat-spinner *ngIf="isLoadingResults"></mat-spinner>
+  </div>
+  <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="inboxConversations" class="example-table"
+           matSort matSortActive="roomname" matSortDisableClear matSortDirection="asc">
+
+
+      <ng-container matColumnDef="roomname">
+        <th mat-header-cell *matHeaderCellDef>Room Name</th>
+        <td mat-cell *matCellDef="let row">{{row.subject}}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="enterChatRoom(row)"></tr>
+    </table>
+  </div>
+</div>-->
+
+<button id="btnTest" (click)="add()">
+  Ajouter une conversation
+</button>
+<table class="table table-striped"  >
+
+  <tbody>
+    <tr>
+      <th>Conversation</th>
+      <th>Date de création</th>
+      <th>Participants</th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let c of inboxConversations">
+      <td>{{c.subject}}</td>
+      <td>{{c.startDate | date:'short'}}</td>
+      <td>{{c.nbParticipants}}</td>
+      <td> <button class="btn btn-dark" (click)="enterChatRoom(c)">Accéder au conversation</button></td>
+    </tr>
+  </tbody>
+</table>
+  
